@@ -1,0 +1,21 @@
+[package]
+name = "unicode_lsp"
+version = "0.1.0"
+authors = ["Vincent Woltmann <vincent@woltmann.art>"]
+edition = "2021"
+description = "A barely functional language server to input unicode"
+readme = "README.md"
+repository = "https://github.com/VincentWo/um"
+license = "MIT"
+keywords = ["unicode", "lsp"]
+exclude = ["*.um"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.2.1"
+fuzzy-matcher = "0.3.7"
+ropey = "1.6.0"
+serde = { version = "1.0.157", features = ["derive"] }
+tokio = { version = "1.26.0", features = ["full"] }
+tower-lsp = { version = "0.19.0", features = ["proposed"] }
